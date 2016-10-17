@@ -95,6 +95,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #
 # add_function_parentheses = True
 
+# -*- coding: utf-8 -*-
+import sys, os
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
 #
