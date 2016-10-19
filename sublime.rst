@@ -1,3 +1,5 @@
+.. _Sublime Text 3 使用方法:
+
 Sublime Text 3 使用方法
 ========================
 
@@ -21,18 +23,18 @@ Sublime Text 3 使用方法
 常用快捷键
 ----------
 
-`Sublime Text`_ 提供了非常丰富的快捷键，十分有助于编写OpenSees或其它代码。下面介绍一些主要的快捷键。
+``Sublime Text`` 提供了非常丰富的快捷键，十分有助于编写OpenSees或其它代码。下面介绍一些主要的快捷键。
 
 
-- `cmd` + `D` ：选择重复内容。这在修改相近的重复内容时十分有用。
-- `cmd` + `U` ：如果 `cmd` + `D` 不小心多按了一次，可以取消上一次的选择。
-- `cmd` + `L` ：在光标所在的位置选择整行。
-- `cmd` + `shift` + `L` ：把选择好各行的一个区域按行分解为多个区域。
-- `cmd` + `shift` + `D` ：复制整行。
-- `cmd` + `/` ：注释和取消注释
-- `cmd` + `左右箭头` ：从光标起选择到行尾。
-- `cmd` + `control` + `上下箭头` ：把行与相邻行对调位置。
-- `alt` + `鼠标左键` ：列块选择模式。
+- ``cmd`` + ``D`` ：选择重复内容。这在修改相近的重复内容时十分有用。
+- ``cmd`` + ``U`` ：如果 ``cmd`` + ``D`` 不小心多按了一次，可以取消上一次的选择。
+- ``cmd`` + ``L`` ：在光标所在的位置选择整行。
+- ``cmd`` + ``shift`` + ``L`` ：把选择好各行的一个区域按行分解为多个区域。
+- ``cmd`` + ``shift`` + ``D`` ：复制整行。
+- ``cmd`` + ``/`` ：注释和取消注释
+- ``cmd`` + ``左右箭头`` ：从光标起选择到行尾。
+- ``cmd`` + ``control`` + ``上下箭头`` ：把行与相邻行对调位置。
+- ``alt`` + ``鼠标左键`` ：列块选择模式。
 
 以下是在编辑OpenSees代码过程中经常使用到的快捷键。还有很多好用的快捷键，用户可以参考以下文章。
 
@@ -49,9 +51,9 @@ Package Control
 安装
 ~~~~~~
 
-`Sublime Text` 的扩展性能非常强，有一个非常方便的插件包管理工具 `Package Control`_ 。几乎所有用户都会使用 `Package Control`_ 来管理自己的插件。强烈建议安装 `Package Control`_ 。
+``Sublime Text`` 的扩展性能非常强，有一个非常方便的插件包管理工具 `Package Control`_ 。几乎所有用户都会使用 `Package Control`_ 来管理自己的插件。强烈建议安装 `Package Control`_ 。
 
-安装 `Package Control`_ 非常简单，您只需要打开其 `安装页面`_ ，将其中的代码复制，再回到 `Sublime Text` 中，从 `View` - `Show Console` 中（或按下 `control` + `\`` ） 打开控制台，粘帖，按回车执行，就安装好了 `Package Control`_ 
+安装 `Package Control`_ 非常简单，您只需要打开其 `安装页面`_ ，将其中的代码复制，再回到 ``Sublime Text`` 中，从 ``View`` - ``Show Console`` 中（或按下 ``control`` + ``\``` ） 打开控制台，粘帖，按回车执行，就安装好了 `Package Control`_ 
 
 .. _Package Control: https://packagecontrol.io
 .. _安装页面: https://packagecontrol.io/installation
@@ -59,13 +61,13 @@ Package Control
 使用方法
 ~~~~~~~~~
 
-`Package Control` 要从 `Sublime Text` 的 `Command Palette` 中运行。点击 `Tools` - `Command Palette` 弹出命令面板。在命令面板中输入 `Package` 就可以看到全部与 `Package Control` 有关的命令了。其中主要有
+``Package Control`` 要从 ``Sublime Text`` 的 ``Command Palette`` 中运行。点击 ``Tools`` - ``Command Palette`` 弹出命令面板。在命令面板中输入 ``Package`` 就可以看到全部与 ``Package Control`` 有关的命令了。其中主要有
 
 - Install Package: 安装插件包。执行后看左下角的状态栏中显示正在搜索，过几秒钟后在命令面板中就会显示出一个列表，这个列表就是所有可用的插件。从列表中选择所需要的插件，单击就会自动安装。这些插件是托管在Github上的开源项目，所以需要联网才能安装。
 - List Packages: 列出当前所有安装的插件。
 - Disable Package: 禁用某个插件.
 
-下面我们就可以利用 `Package Control` 来安装我们所需要的插件了。下文中我将介绍与OpenSees编程有关的主要插件。
+下面我们就可以利用 ``Package Control`` 来安装我们所需要的插件了。下文中我将介绍与OpenSees编程有关的主要插件。
 
 
 Sublime-OpenSees
@@ -75,17 +77,17 @@ Sublime-OpenSees
 
 - 代码高亮：对于OpenSees所使用的主要保留字，提供代码高亮的功能。
 - 自动补全：由于OpenSees每一条命令所需要的参数繁多，难以记忆，所以本插件提供自动补全功能。用户只需要输入主要的关键字，就会自动提供可选命令，并给予所需要输入的参数的相应参考。这一功能可以极大的提高代码的编写速度。
-- 在 `Sublime Text` 内部提交代码执行分析。这个功能是用户只需要简单的快捷键就可以执行OpenSees代码，而不需要切换到控制台中，可以提高工作效率。
+- 在 ``Sublime Text`` 内部提交代码执行分析。这个功能是用户只需要简单的快捷键就可以执行OpenSees代码，而不需要切换到控制台中，可以提高工作效率。
 
-下面介绍一下 `Sublime-OpenSees`_  的安装方法。按照上一小节中 `Install Package` 的使用方法，从弹出的插件列表中找到 `OpenSees` ，即可完成安装。
+下面介绍一下 `Sublime-OpenSees`_  的安装方法。按照上一小节中 ``Install Package`` 的使用方法，从弹出的插件列表中找到 ``OpenSees`` ，即可完成安装。
 
-在使用中，首先新建一个空白文档，找到 `Command Palette` ，输入 `SSOP` ，或者其他简写的字符串，找到 `Set Syntex: OpenSees Input` 一项，即可设定该文档的语言为OpenSees。这时输入代码的时候，对于OpenSees关键字，系统就会做高亮处理。与上一章相同，我们在文档中输入 ::
+在使用中，首先新建一个空白文档，找到 ``Command Palette`` ，输入 ``SSOP`` ，或者其他简写的字符串，找到 ``Set Syntex: OpenSees Input`` 一项，即可设定该文档的语言为OpenSees。这时输入代码的时候，对于OpenSees关键字，系统就会做高亮处理。与上一章相同，我们在文档中输入 ::
     
     puts "Hello, OpenSees!"
 
-可以看到，代码中的 `puts` 被高亮处理了。
+可以看到，代码中的 ``puts`` 被高亮处理了。
 
-下面我们试着在 `Sublime Text` 中直接执行OpenSees代码。点击 `Tools` - `Build` 或者快捷键 `cmd` + `B` ，就弹出了 `Build选项` 。选择 `OpenSees` 会发现程序底部弹出了一个窗口，输出了如下内容 ::
+下面我们试着在 ``Sublime Text`` 中直接执行OpenSees代码。点击 ``Tools`` - ``Build`` 或者快捷键 ``cmd`` + ``B`` ，就弹出了 ``Build选项`` 。选择 ``OpenSees`` 会发现程序底部弹出了一个窗口，输出了如下内容 ::
     
         [RUN OpenSees Sequential for "untitled.tcl" Started]
 
@@ -142,4 +144,4 @@ Super Calculator
 ConvertToUTF8
 ~~~~~~~~~~~~~~~~~~~~~
 
-如果你想打开的文本文件中包含有中文，由于编码问题， `Sublime Text` 有可能会显示乱码。安装了 `ConvertToUTF8`_ 之后，可以在打开文本文件几秒钟之内将编码转换成正确的编码。
+如果你想打开的文本文件中包含有中文，由于编码问题， ``Sublime Text`` 有可能会显示乱码。安装了 `ConvertToUTF8`_ 之后，可以在打开文本文件几秒钟之内将编码转换成正确的编码。
