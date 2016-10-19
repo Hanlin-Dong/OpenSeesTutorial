@@ -37,9 +37,9 @@ OpenSees程序是通过执行Tcl代码来完成与用户的交互的，这一点
 
     puts "Hello, OpenSees!"
 
-*注意* ：Windows用户请不要使用系统的 ``记事本`` 来输入代码，请选用其它文本编辑器。有很多文本编辑器可供选择，本文档中推荐使用 `Sublime Text 3`_ 作为编辑器。如果你对文本编辑器不熟悉，具体的使用方法可参考 `Sublime Text 3 使用方法`_ 。
+*注意* ：Windows用户请不要使用系统的 ``记事本`` 来输入代码，请选用其它文本编辑器。有很多文本编辑器可供选择，本文档中推荐使用 `Sublime Text 3`_ 作为编辑器。如果你对文本编辑器不熟悉，具体的使用方法可参考 :doc:`sublime` 。
 
-这一语句表示把 ``Hello, OpenSees!`` 这一字符串在控制台中打印说来。其中 ``puts`` 为Tcl语言的保留字。更多有关Tcl语言的帮助，请参考 ``第三章`` 。
+这一语句表示把 ``Hello, OpenSees!`` 这一字符串在控制台中打印说来。其中 ``puts`` 为Tcl语言的保留字。更多有关Tcl语言的帮助，请参考 :doc:`tcl` 。
 
 .. _Sublime Text 3: http://www.sublimetext.com/
 .. _其它项目: http://opensees.berkeley.edu/OpenSees/user/tools.php
