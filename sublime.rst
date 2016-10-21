@@ -77,6 +77,9 @@ Sublime-OpenSees
 - 自动补全：由于OpenSees每一条命令所需要的参数繁多，难以记忆，所以本插件提供自动补全功能。用户只需要输入主要的关键字，就会自动提供可选命令，并给予所需要输入的参数的相应参考。这一功能可以极大的提高代码的编写速度。
 - 在 ``Sublime Text`` 内部提交代码执行分析。这个功能是用户只需要简单的快捷键就可以执行OpenSees代码，而不需要切换到控制台中，可以提高工作效率。
 
+安装
+~~~~~~
+
 下面介绍一下 `Sublime-OpenSees`_  的安装方法。按照上一小节中 ``Install Package`` 的使用方法，从弹出的插件列表中找到 ``OpenSees`` ，即可完成安装。
 
 在使用中，首先新建一个空白文档，找到 ``Command Palette`` ，输入 ``SSOP`` ，或者其他简写的字符串，找到 ``Set Syntex: OpenSees Input`` 一项，即可设定该文档的语言为OpenSees。这时输入代码的时候，对于OpenSees关键字，系统就会做高亮处理。与上一章相同，我们在文档中输入 ::
@@ -84,6 +87,9 @@ Sublime-OpenSees
     puts "Hello, OpenSees!"
 
 可以看到，代码中的 ``puts`` 被高亮处理了。
+
+执行
+~~~~~~
 
 下面我们试着在 ``Sublime Text`` 中直接执行OpenSees代码。点击 ``Tools`` - ``Build`` 或者快捷键 ``cmd`` + ``B`` ，就弹出了 ``Build选项`` 。选择 ``OpenSees`` 会发现程序底部弹出了一个窗口，输出了如下内容 ::
     
@@ -107,6 +113,36 @@ Sublime-OpenSees
 
 说明该代码已经被OpenSees成功执行。
 
+.. note:: 在执行之前，请注意先保存文件。
+
+如果您的对话框中没有弹出运行成功的消息，是因为 ``Sublime-OpenSees`` 包中的设置与您系统的实际情况不符。请打开 ``Preferences`` - ``PackageSettings`` - ``OpenSees`` - ``Settings - User`` 。如果您已经将 ``OpenSees`` 所在的文件夹 :ref:`env-setup` ，则只需要拷贝如下代码到打开的 ``Settings - User`` 文件夹并保存。
+
+.. code-block:: json
+
+    {
+        "opensees_dir": {
+            "windows": "",
+            "osx": ""
+        },
+        "opensees": "opensees"
+    }
+
+如果您没有把OpenSees所在文件夹加入环境变量，而是放在 `C:\opensees` 文件夹中，请把上面代码修改为
+
+.. code-block:: json
+   :emphasize-lines: 6
+
+    {
+        "opensees_dir": {
+            "windows": "",
+            "osx": ""
+        },
+        "opensees": "C:\\opensees\\opensees"
+    }
+
+代码补全
+~~~~~~~~
+
 有关代码补全，演示如下
 
 .. image:: image/opensees_autocompletion.gif
@@ -124,11 +160,11 @@ Increment Selection
 
 上图中使用的快捷键：
 
-- `cmd` + `shift` + `D` ：复制整行
-- `cmd` + `箭头` ：选择到行首/首行
-- `cmd` + `shift` + `L` ：分割选择到列
-- `shift` + `箭头` ：选择相邻字母
-- `cmd` + `control` + `I` ：Increment Selection
+- ``cmd`` + ``shift`` + ``D`` ：复制整行
+- ``cmd`` + ``箭头`` ：选择到行首/首行
+- ``cmd`` + ``shift`` + ``L`` ：分割选择到列
+- ``shift`` + ``箭头`` ：选择相邻字母
+- ``cmd`` + ``control`` + ``I`` ：Increment Selection
 
 .. _Increment Selection: https://github.com/yulanggong/IncrementSelection/
 
