@@ -65,7 +65,7 @@ OpenSees官网推荐了一款专门为OpenSees开发的的文本编辑软件 `Cy
 其他功能简要介绍
 ------------------
 
-和Sublime text 3一样， `CypressEditor`_ 提供了代码高亮、关键字等功能。
+`CypressEditor`_ 提供了代码高亮、关键字等功能。
 
 代码高亮：对于OpenSees所使用的主要保留字，提供代码高亮的功能。
 
@@ -81,7 +81,7 @@ OpenSees官网推荐了一款专门为OpenSees开发的的文本编辑软件 `Cy
    
 软件右侧的Solution Explorer可以显示所有建立的solution以及所有solution下的tcl文件。
 
-.. image:: image/cypress-Solution_Explorer.png
+.. image:: image/cypress-solution_explorer.png
 
 软件左侧的Command Explorer，点击向下的三角箭头，可以迅速查找命令，并调取其帮助文档。
 
