@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CypressEditor 使用方法 &#8212; OpenSees 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="OpenSees 1.0.0 documentation" href="index.html" />
+    <link rel="next" title="Sublime Text 3 使用方法" href="sublime.html" />
+    <link rel="prev" title="安装和运行" href="setup.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cypresseditor">
+<h1>CypressEditor 使用方法<a class="headerlink" href="#cypresseditor" title="Permalink to this headline">¶</a></h1>
+<p>OpenSees官网推荐了一款专门为OpenSees开发的的文本编辑软件 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> ，它其中集成了OpenSees的帮助文档，调阅十分方便。且可直接在 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 执行，不需要再单独开启OpenSees。</p>
+<p>下面介绍 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 的基本使用方法。</p>
+<div class="section" id="id2">
+<h2>下载和安装<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>登陆 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 的官方网站 ，进入 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/download/latest">Download</a> 页面，选择合适的版本，下载并安装即可。目前 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 仍为测试版，且只有windows版本放出，mac和linux版本的用户，可能还需要再稍作等待。更诱人的是，它是免费的。</p>
+<p>安装时，会弹出和OpenSees一样需要填写的机构，姓名，邮箱之类用于收集学术信息。 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 可以被安装在计算机的任意位置，而不需要和OpenSees安装在同一个文件夹下。安装完成后，启动编辑器时，需要输入一个邮箱，来获取激活码，所以一定要填写真实的邮箱。注册成功后，安装就完成了。</p>
+<img alt="_images/cypress-activate1.png" src="_images/cypress-activate1.png" />
+<img alt="_images/cypress-activate2.png" src="_images/cypress-activate2.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">有些邮箱（如同济大学邮箱）收不到激活码。如果遇到这种情况请更换不同的邮箱。QQ邮箱可以使用。</p>
+</div>
+<p>为了愉快地使用 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> ，还需要进行一项操作，为 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 设定OpenSees的安装路径，这是代码能够顺利执行的关键。执行完此项操作，就可以在OpenSees的海洋里徜徉了。</p>
+<img alt="_images/cypress-changepath.png" src="_images/cypress-changepath.png" />
+</div>
+<div class="section" id="id3">
+<h2>常用快捷键<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 提供了非常丰富的快捷键，且和使用其他编译软件和办公软件的快捷键几乎相同，对广大windows用户十分友好，这些快捷键有助于编写OpenSees或其它代码。下面介绍一些主要的快捷键。</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">Z</span></code> ：撤销输入。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">X</span></code> ：剪切。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">C</span></code> ：复制。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">V</span></code> ：粘贴。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">A</span></code> ：全选。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">S</span></code> ：保存。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">K</span></code> ：如是注释行，则选中整行，如果是非注释行，则在前加“#”变为注释行。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">shift``+</span> <span class="pre">``K</span></code> ：如是命令行，则选中整行，如果是注释行，则将“#”去掉变为命令行。</li>
+<li><code class="docutils literal"><span class="pre">ctrl</span></code> + <code class="docutils literal"><span class="pre">shift``+</span> <span class="pre">``alt</span></code> ：列选择模式。</li>
+<li><code class="docutils literal"><span class="pre">F5</span></code> ：运行命令。</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">在第一次执行之前，请注意先保存文件。但建立文件以后，每次做出修改时，可以直接运行，而不需要再次保存</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>工具栏<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/cypress-toolbar.png" src="_images/cypress-toolbar.png" />
+<p><a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 的工具栏与其他软件一致，从左至右依次为新建tcl文件、打开tcl文件、保存tcl文件、打印tcl文件、向前撤销、向后撤销、剪切、复制、粘贴及全选。</p>
+<img alt="_images/cypress-addnew.png" src="_images/cypress-addnew.png" />
+<p>通过新建tcl即可以开始编写自己的OpenSees文件啦。</p>
+</div>
+<div class="section" id="id5">
+<h2>输出<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 在运行命令后，会自动生成一个窗体显示结果，按任意键可以退出该窗体，回到命令编辑窗口。</p>
+<img alt="_images/cypress-output.png" src="_images/cypress-output.png" />
+</div>
+<div class="section" id="id6">
+<h2>其他功能简要介绍<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>和Sublime text 3一样， <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 提供了代码高亮、关键字等功能。</p>
+<p>代码高亮：对于OpenSees所使用的主要保留字，提供代码高亮的功能。</p>
+<p>关键字：只要输入命令的关键字，就会自动提供可选命令。</p>
+<img alt="_images/cypress-intelli1.png" src="_images/cypress-intelli1.png" />
+<p>参数提示：由于OpenSees每一条命令所需要的参数繁多，难以记忆，所以本只需要输入关键字后，命令即会弹出小窗口，提示其后需要输入的参数，用户只要按提示输入即可。</p>
+<img alt="_images/cypress-reminder.png" src="_images/cypress-reminder.png" />
+<p>软件右侧的Solution Explorer可以显示所有建立的solution以及所有solution下的tcl文件。</p>
+<img alt="_images/cypress-Solution_Explorer.png" src="_images/cypress-Solution_Explorer.png" />
+<p>软件左侧的Command Explorer，点击向下的三角箭头，可以迅速查找命令，并调取其帮助文档。</p>
+<img alt="_images/cypress-command_explorer.png" src="_images/cypress-command_explorer.png" />
+<p>软件下方的 <code class="docutils literal"><span class="pre">Command</span> <span class="pre">Help</span></code> ，可以看到调取出的帮助文档，不过除非你的屏幕很大，或者采用双屏，否则看起来相当得费劲，还是建议直接看网页的帮助文档吧。</p>
+<p>以上就是 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/default.aspx">CypressEditor</a> 的主要功能介绍。如想了解更多，可以登录其官方网站，查看 <a class="reference external" href="http://cypress.hrshojaie.com/en-us/help/documentation">帮助文档</a> 。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">CypressEditor 使用方法</a><ul>
+<li><a class="reference internal" href="#id2">下载和安装</a></li>
+<li><a class="reference internal" href="#id3">常用快捷键</a></li>
+<li><a class="reference internal" href="#id4">工具栏</a></li>
+<li><a class="reference internal" href="#id5">输出</a></li>
+<li><a class="reference internal" href="#id6">其他功能简要介绍</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="setup.html" title="previous chapter">安装和运行</a></li>
+      <li>Next: <a href="sublime.html" title="next chapter">Sublime Text 3 使用方法</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/cypress.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Hanlin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/cypress.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
