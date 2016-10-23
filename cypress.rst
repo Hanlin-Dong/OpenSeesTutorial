@@ -18,8 +18,6 @@ OpenSees官网推荐了一款专门为OpenSees开发的的文本编辑软件 `Cy
 
 .. image:: image/cypress-activate1.png
 
-.. image:: image/cypress-activate2.png
-
 .. note:: 有些邮箱（如同济大学邮箱）收不到激活码。如果遇到这种情况请更换不同的邮箱。QQ邮箱可以使用。
 
 为了愉快地使用 `CypressEditor`_ ，还需要进行一项操作，为 `CypressEditor`_ 设定OpenSees的安装路径，这是代码能够顺利执行的关键。执行完此项操作，就可以在OpenSees的海洋里徜徉了。

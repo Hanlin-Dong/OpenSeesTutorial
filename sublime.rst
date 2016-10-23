@@ -147,7 +147,7 @@ Sublime-OpenSees
 
 有关代码补全，演示如下
 
-.. image:: image/opensees_autocompletion.gif
+.. image:: image/sublime-opensees_autocompletion.gif
 
 
 其它推荐使用的包
@@ -158,7 +158,7 @@ Increment Selection
 
 `Increment Selection`_ 是一个快速创建连续整数的插件，这在OpenSees编程中很常见。
 
-.. image:: image/increment_selection.gif
+.. image:: image/sublime-increment_selection.gif
 
 上图中使用的快捷键：
 
@@ -175,7 +175,7 @@ Super Calculator
 
 `Super Calculator`_ 可以帮助你把输入的算式计算出结果。
 
-.. image:: image/super_calculator.gif
+.. image:: image/sublime-super_calculator.gif
 
 ConvertToUTF8
 ~~~~~~~~~~~~~~~~~~~~~
