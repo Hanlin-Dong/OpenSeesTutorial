@@ -1,4 +1,4 @@
-forceBeamColumn和dispBeamColumn单元
+forceBeamColumn和dispBeamColumn
 =======================================
 
 待补充
