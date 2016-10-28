@@ -200,17 +200,17 @@ Opensees中分析类型有三种。静力分析、等步长瞬态分析、变步
 
     recorder Node <-file $fileName> <-xml $fileName> <-binary $fileName> <-tcp $inetAddress $port> <-precision $nSD> <-timeSeries $tsTag> <-time> <-dT $deltaT> <-closeOnWrite> <-node $node1 $node2 ...> <-nodeRange $startNode $endNode> <-region $regionTag> -dof ($dof1 $dof2 ...) $respType'
 
- ``<  >`` 中的参数，往往不是必须填写，只有在输入 ``-`` 后的内容时，才会引用。如编辑 -file 则引用 ``<-file $fileName>`` 内容，并填写 ``$fileNmme`` ，$后面的内容是自定义内容，可以根据自己的需要进行修改。
+``<  >`` 中的参数，往往不是必须填写，只有在输入 ``-`` 后的内容时，才会引用。如编辑 -file 则引用 ``<-file $fileName>`` 内容，并填写 ``$fileNmme`` ，$后面的内容是自定义内容，可以根据自己的需要进行修改。
  将常用参数列出，其他请参看帮助文档关于 `recorder`_ 命令的解释。
 
- .. _recorder : http://opensees.berkeley.edu/wiki/index.php/Node_Recorder
+.. _recorder : http://opensees.berkeley.edu/wiki/index.php/Node_Recorder
  
- - ``<-file $fileName>`` 设定输出文本文件名（带后缀）-xml、-binary为不同文件类型
- - ``<-time>`` 记录分析时间，一般静力加载采用线性加载方式，随着时间增大将荷载加到目标值。注意这里的时间不是一个绝对量（如计算时间），而是相对量（如以0表示分析开始，1表示荷载施加完毕）。
- - ``<-node $node1 $node2 ...>`` 选择输出的节点号
- - ``<-dof ($dof1 $dof2 ...)>``  输出节点的自由度
- - ``<$respType>``               设定输出值。可选量为位移、速度、加速度等。
- 
+- ``<-file $fileName>`` 设定输出文本文件名（带后缀）-xml、-binary为不同文件类型
+- ``<-time>`` 记录分析时间，一般静力加载采用线性加载方式，随着时间增大将荷载加到目标值。注意这里的时间不是一个绝对量（如计算时间），而是相对量（如以0表示分析开始，1表示荷载施加完毕）。
+- ``<-node $node1 $node2 ...>`` 选择输出的节点号
+- ``<-dof ($dof1 $dof2 ...)>``  输出节点的自由度
+- ``<$respType>`` 设定输出值。可选量为位移、速度、加速度等。
+
 运行
 ----------
 
@@ -220,8 +220,7 @@ Opensees中分析类型有三种。静力分析、等步长瞬态分析、变步
 
 即： analyze 分析步数 <步长增量> <最小步长 最大步长 最大分析步数> ``<>`` 中的参数只需要在动力分析中输入，静力分析可不选::
 
-  analyze 1   #分析荷载总步数为1
-
+    analyze 1   #分析荷载总步数为1
 
 至此，一个完整的Opensees程序已经分析完毕，通过这个例子，相信你对Opensees的操作流程也有了基本的了解。有了这样一个知识框架作为铺垫，日后只需要通过对阅读帮助文档，就可以很快投入到实际使用中。
 
