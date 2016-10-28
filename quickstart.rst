@@ -201,7 +201,8 @@ Opensees中分析类型有三种。静力分析、等步长瞬态分析、变步
     recorder Node <-file $fileName> <-xml $fileName> <-binary $fileName> <-tcp $inetAddress $port> <-precision $nSD> <-timeSeries $tsTag> <-time> <-dT $deltaT> <-closeOnWrite> <-node $node1 $node2 ...> <-nodeRange $startNode $endNode> <-region $regionTag> -dof ($dof1 $dof2 ...) $respType'
 
 ``<  >`` 中的参数，往往不是必须填写，只有在输入 ``-`` 后的内容时，才会引用。如编辑 -file 则引用 ``<-file $fileName>`` 内容，并填写 ``$fileNmme`` ，$后面的内容是自定义内容，可以根据自己的需要进行修改。
- 将常用参数列出，其他请参看帮助文档关于 `recorder`_ 命令的解释。
+
+将常用参数列出，其他请参看帮助文档关于 `recorder`_ 命令的解释。
 
 .. _recorder : http://opensees.berkeley.edu/wiki/index.php/Node_Recorder
  
