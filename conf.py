@@ -53,8 +53,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenSees'
-copyright = u'2016, Hanlin'
-author = u'Hanlin'
+copyright = u'2016, 董翰林, 董文晨'
+author = u'Hanlin DONG, Wenchen DONG'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
