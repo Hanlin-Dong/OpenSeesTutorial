@@ -28,8 +28,10 @@ forceBeamColumn和dispBeamColumn
 那么，柔度法就可以解决这个问题吗？答案是肯定的。柔度法的插值函数称为 ``力插值函数`` 。以平面梁单元为例，在平截面假定下，扒出材料力学中就收获的微分关系。
 
 .. image:: image/weifenguanxi.png
+  :align: center
 
 .. image:: image/liangweifentu.png
+  :align: center
 
 在平截面假定下，这一微分关系是精确的。假设梁不存在分布荷载，即微分方程右侧为0。
 
@@ -38,9 +40,11 @@ forceBeamColumn和dispBeamColumn
 则有：
 
 .. image:: image/lichazhihanshu1.png
+  :align: center
 
 
 .. image:: image/lichazhihanshu2.png
+  :align: center
 
 其中矩阵B即为力插值函数。可知，在以力为基本未知量的柔度法中，插值函数是精确的。以此为出发点，在后续的推导中，可以获得精确的结果。
 
