@@ -4,7 +4,7 @@ forceBeamColumn和dispBeamColumn
 通过之前的学习，相信你对OpenSees已经有了初步的了解。但你仍然会有疑问，为什么这样一款奇奇怪怪的软件会如此风靡。它的流行绝不仅仅是因为它逼（hao）格（fa）很（lun）高（wen），而是确有其出众之处。其中之一就是它丰富的单元库，它为求解复杂问题提供了支持。今天我们就简要谈一下两种单元： ``dispBeamColumn`` 和 ``forceBeamColumn`` 。这两种单元名字类似，功能相近，初识之下，往往不知如何选择。
 
 
- ``dispBeamColumn`` 的全称是Displacement-Based Beam-Column Element即基于位移的梁柱单元（以下简称DBC），而 ``forceBeamColumn`` 的全称是Force-Based Beam-Column Element，即基于力的梁柱单元（以下简称FBC）。下面就两者的共性与特性进行说明。
+``dispBeamColumn`` 的全称是Displacement-Based Beam-Column Element即基于位移的梁柱单元（以下简称DBC），而 ``forceBeamColumn`` 的全称是Force-Based Beam-Column Element，即基于力的梁柱单元（以下简称FBC）。下面就两者的共性与特性进行说明。
 
 两种单元有如下共性：均适用于细长梁，即符合平截面假定，弯矩与曲率成线性关系，忽略剪切变形的影响。对于深梁，模拟效果不佳。
 
