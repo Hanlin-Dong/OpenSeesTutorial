@@ -1,6 +1,12 @@
 利用matplotlib作图
 ===========================
 
+对于 ``recorder`` 输出的结果，如果需要用最快的方法观察其力-位移关系，推荐使用 翰林苑_ 结构工具箱_ 中的 后处理工具_ 。但是对于复杂的作图，推荐使用 matplotlib_ 。
+
+.. _翰林苑: http://www.hanlindong.com/
+.. _结构工具箱: http://www.hanlindong.com/toolcatalog/
+.. _后处理工具: http://www.hanlindong.com/tools/opensees-postprocess-xyfigure/
+
 Python是一门面向对象的解释型语言，其优势在于易学习、易阅读、易扩展。Python现在已经越来越多地用于科学计算中，这得益于很多优秀的Python模块。主要有 numpy_ ， matplotlib_ ， scipy_ 等。比起把OpenSees生成的数据粘贴到excel中再作图，利用 matplotlib_ 作图是一个更方便快捷的选择。更重要的是，相比 matlab_ 高昂的费用， Python的科学计算模块都是开源和免费的。
 
 下面针对Windows用户介绍如何安装和配置 matplotlib_ 作图环境。
